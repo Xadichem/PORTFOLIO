@@ -1,0 +1,157 @@
+:root {
+  --accent: rgb(5, 146, 48);
+  --accent-light: rgb(70, 236, 120);
+  --pure-white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: var(--accent);
+}
+.header {
+  background-color: var(--accent);
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 60px 0;
+}
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-navigation {
+  padding: 16px 0;
+  background-color: var(--accent, rgb(5, 146, 48));
+  color: var(--pure-white, #fff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 20%;
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-link {
+  text-transform: uppercase;
+  padding: 19px;
+  font-size: 16px;
+  line-height: 16px;
+  transition: background-color 0.4s;
+}
+
+.menu-link:hover {
+  background-color: var(--accent-light);
+}
+.intro {
+  padding: 60px 0;
+}
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.intro-left {
+  width: 30%;
+}
+.intro-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.intro-right {
+  width: 60%;
+}
+.intro-right h1,
+.intro-right h3 {
+  margin: 0 0 10px;
+}
+.intro-right p {
+  line-height: 20px;
+}
+.contacts {
+  margin-bottom: 60px;
+}
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacts li {
+  text-align: center;
+}
+.skills {
+  padding: 60px 0;
+  background-color: var(--accent);
+  color: var(--pure-white);
+}
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+.skills li {
+  padding: 10px 15px 5px;
+  background-color: var(--accent-light);
+  border-radius: 4px;
+}
+.code-example {
+  margin: 60px 0;
+  text-align: center;
+}
+.code-example p {
+  font-style: italic;
+}
+.code-example b {
+  font-style: normal;
+}
+.code-example pre {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 20px 0 35px;
+  text-align: left;
+  font-size: 1.2em;
+  color: var(--pure-white);
+  background-color: var(--accent);
+  border-radius: 8px;
+}
