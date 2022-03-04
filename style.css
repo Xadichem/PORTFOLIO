@@ -18,6 +18,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  background-color: aqua;
   color: var(--accent);
 }
 .header {
@@ -77,6 +78,7 @@ body {
 }
 .intro {
   padding: 60px 0;
+  color: black;
 }
 .intro-inner {
   display: flex;
@@ -104,6 +106,7 @@ body {
 }
 .contacts {
   margin-bottom: 60px;
+  color: black;
 }
 .contacts ul {
   display: flex;
@@ -138,6 +141,7 @@ body {
 .code-example {
   margin: 60px 0;
   text-align: center;
+  color: black;
 }
 .code-example p {
   font-style: italic;
@@ -154,4 +158,112 @@ body {
   color: var(--pure-white);
   background-color: var(--accent);
   border-radius: 8px;
+}
+.portfolio {
+  margin: 50px 0;
+  padding: 30px 0 50px;
+  text-align: center;
+  background-color: var(--accent);
+  color: var(--pure-white);
+}
+
+.wrapper div {
+  padding: 10px 15px;
+  background-color: var(--accent-light);
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 350px 300px 400px;
+  grid-column-gap: 40px;
+}
+.wrapper p {
+  text-align: left;
+}
+.wrapper img {
+  width: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, 0.75);
+}
+.wrapper table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding-bottom: 15px;
+}
+th {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  border: 1px solid black;
+}
+
+div header,
+aside,
+article,
+div footer {
+  padding: 10px;
+  background-color: rgb(110, 105, 126);
+  color: var(--pure-white);
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+}
+.site {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: minmax(100px auto) 1fr minmax(100px, auto);
+  grid-template-areas:
+    "header header"
+    "aside article"
+    "footer footer";
+  margin: 0;
+}
+.header {
+  grid-area: header;
+}
+.saidebar {
+  grid-area: aside;
+}
+.about {
+  grid-area: article;
+}
+.footer {
+  grid-area: footer;
+}
+.education {
+  margin: 60px 0;
+  text-align: center;
+  color: black;
+}
+.education ul {
+  margin: 20px 0;
+  padding: 20px 0;
+  list-style: none;
+}
+.language {
+  padding: 60px 0;
+  background-color: var(--accent);
+  color: var(--pure-white);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.language ol {
+  padding: 20px 470px;
+  line-height: 30px;
+}
+footer {
+  margin: 60px 0;
+  text-align: center;
+  color: rgb(65, 58, 58);
 }
